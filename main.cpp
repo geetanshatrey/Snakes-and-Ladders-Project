@@ -125,7 +125,6 @@ public:
         }
     }
 
-
 private:
     int board_size;
     map<int,int> snakes;
@@ -231,7 +230,7 @@ void get_game_data(Game& _game)
         player_names.push_back(name);
     }
 
-    _game = Game(player_names,100,snakes,ladders);
+    _game = Game(player_names,BOARD_SIZE,snakes,ladders);
 }
 
 int main()
